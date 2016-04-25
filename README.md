@@ -1,9 +1,6 @@
-[Automatic Colorization for Grayscale Images](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/)
-=======================
+# [Automatic Colorization for Grayscale Images](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/)
 
-
-Overview
---------
+## Overview
 
 This code provides an implementation of the research paper:
 
@@ -13,11 +10,15 @@ This code provides an implementation of the research paper:
   ACM Transaction on Graphics (Proc. of SIGGRAPH 2016), 2016
 ```
 
+We learn to automatically color grayscale images with a deep network. Our
+network learns both local features and global features jointly in a single
+framework. Our approach can then be used on images of any resolution. By
+incorporating global features we are able to obtain very realistic colorings
+with our model.
+
 See our [project page](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/) for more detailed information.
 
-
-License
--------
+## License
 
 ```
   Copyright (C) <2016> <Satoshi Iizuka, Edgar Simo-Serra, Hiroshi Ishikawa>
@@ -34,8 +35,7 @@ License
 ```
 
 
-Dependencies
-------------
+## Dependencies
 
 - [Torch7](http://torch.ch/docs/getting-started.html)
 - [nn](https://github.com/torch/nn)
@@ -50,9 +50,7 @@ luarocks install image
 luarocks install nngraph
 ```
 
-
-Usage
------
+## Usage
 
 First, download the colorization model by running the download script:
 
@@ -72,8 +70,15 @@ For example:
 th colorize.lua ansel_colorado_1941.png out.png
 ```
 
+### Notes
 
-This is developed on a linux machine running Ubuntu 14.04 during late 2015. If you use this code please cite:
+- This is developed on a linux machine running Ubuntu 14.04 during late 2015.
+- The provided code does not use GPU accelerated (trivial to change).
+- Please note that the model is slow on large images (over 512x512 pixels) and may run out of memory.
+
+## Citing
+
+If you use this code please cite:
 
 ```
  @Article{IizukaSIGGRAPH2016,
