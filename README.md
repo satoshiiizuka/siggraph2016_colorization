@@ -1,4 +1,4 @@
-# [Automatic Colorization for Grayscale Images](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/)
+# [Let there be Color!: Automatic Colorization of Grayscale Images](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/)
 
 [Satoshi Iizuka](http://hi.cs.waseda.ac.jp/~iizuka/index_eng.html)\*, [Edgar Simo-Serra](http://hi.cs.waseda.ac.jp/~esimo/)\*, [Hiroshi Ishikawa](http://www.f.waseda.jp/hfs/indexE.html) (\* equal contribution)
 
@@ -17,8 +17,8 @@ This code provides an implementation of the research paper:
 We learn to automatically color grayscale images with a deep network. Our
 network learns both local features and global features jointly in a single
 framework. Our approach can then be used on images of any resolution. By
-incorporating global features we are able to obtain very realistic colorings
-with our model.
+incorporating global features we are able to obtain realistic colorings with
+our model.
 
 See our [project page](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/) for more detailed information.
 
