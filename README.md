@@ -46,13 +46,7 @@ See our [project page](http://hi.cs.waseda.ac.jp/~iizuka/projects/colorization/)
 - [image](https://github.com/torch/image)
 - [nngraph](https://github.com/torch/nngraph)
 
-Each package can be installed via Luarocks:
-
-```
-luarocks install nn
-luarocks install image
-luarocks install nngraph
-```
+All packages should be part of a standard Torch7 install. For information on how to install Torch7 please see the [official torch documentation](http://torch.ch/docs/getting-started.html) on the subject.
 
 ## Usage
 
