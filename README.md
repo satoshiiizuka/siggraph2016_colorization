@@ -78,7 +78,7 @@ th colorize.lua ansel_colorado_1941.png out.png
 
 - This is developed on a linux machine running Ubuntu 14.04 during late 2015.
 - The provided code does not use GPU accelerated (trivial to change).
-- Please note that the model is slow on large images (over 512x512 pixels) and may run out of memory. Demo should take around 2 GiB of peak RAM memory.
+- Please note that the model is slow on large images (over 512x512 pixels) and may run out of memory. Demo should take around 2 GiB of peak RAM memory, system with 4 GiB or more of RAM is recommended.
 - Provided model and sample code is under a non-commercial creative commons license.
 
 ## Citing
