@@ -53,7 +53,7 @@ All packages should be part of a standard Torch7 install. For information on how
 First, download the colorization model by running the download script:
 
 ```
-sh download_model.sh
+./download_model.sh
 ```
 
 Basic usage is:
