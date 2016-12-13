@@ -71,7 +71,7 @@ th colorize.lua ansel_colorado_1941.png out.png
 ### Best Performance
 
 - This model was trained on the [Places dataset](http://places.csail.mit.edu/) and thus best performance is for natural outdoor images.
-- While the model works on any size image, we trained it on 224x224 pixel images and thus it works best on small images. Note that you can process a small imageto obtain the chrominance map and then rescale it and combine it with the original grayscale image for higher quality.
+- While the model works on any size image, we trained it on 224x224 pixel images and thus it works best on small images. Note that you can process a small image to obtain the chrominance map and then rescale it and combine it with the original grayscale image for higher quality.
 - Larger image sizes can give uneven colorings (limited by spatial support of the network).
 
 ### Notes
