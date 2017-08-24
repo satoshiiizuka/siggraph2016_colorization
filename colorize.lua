@@ -19,8 +19,9 @@ require 'image'
 
 local infile  = arg[1]
 local outfile = arg[2] or 'out.png'
+local netfile = arg[3] or 'colornet.t7'
 
-local d        = torch.load( 'colornet.t7' )
+local d        = torch.load( netfile )
 local datamean = d.mean
 local model    = d.model:float()
 

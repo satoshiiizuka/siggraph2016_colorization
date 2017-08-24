@@ -1,19 +1,20 @@
 #!/bin/bash
 
-# md5sum c88fa2bb6dc9f942a492a7dc7009b966
-# sha1sum d397faf0b63a173680824474bfeab4725c375ca2
-FILENAME="colornet.t7"
-FILEURL="http://hi.cs.waseda.ac.jp/~iizuka/data/colornet.t7"
-FILEMD5="c88fa2bb6dc9f942a492a7dc7009b966"
+# md5sum 09eddf45cd1b085fcb4cc880ba448072
+# sha1sum 36b3f03dab74262552dd63ee16b4e1df842a680f
 
-echo "Downloading the colorization model (663M)..."
+FILENAME="colornet_imagenet.t7"
+FILEURL="http://hi.cs.waseda.ac.jp/~iizuka/data/colornet_imagenet.t7"
+FILEMD5="09eddf45cd1b085fcb4cc880ba448072"
+
+echo "Downloading the colorization model (665M)..."
 wget --continue -O "$FILENAME" -- "$FILEURL"
 
 echo "Checking integrity (md5sum)..."
 OS=`uname -s`
 if [ "$OS" = "Darwin" ]; then
   CHECKSUM=`cat $FILENAME | md5`
-  else
+else
   CHECKSUM=`md5sum $FILENAME | awk '{ print $1 }'`
 fi
 

@@ -74,6 +74,21 @@ th colorize.lua ansel_colorado_1941.png out.png
 - While the model works on any size image, we trained it on 224x224 pixel images and thus it works best on small images. Note that you can process a small imageto obtain the chrominance map and then rescale it and combine it with the original grayscale image for higher quality.
 - Larger image sizes can give uneven colorings (limited by spatial support of the network).
 
+### ImageNet Model
+We also provide the colorization model that was trained on [ImageNet](http://image-net.org/challenges/LSVRC/2012/index). This model can be used for comparisons with other colorization models trained on ImageNet. We recommend using the places colorization model for general purposes.
+
+For using the ImageNet model, download the model by running:
+
+```
+./download_model_imagenet.sh
+```
+
+Usage is:
+
+```
+th colorize.lua <input_image> <output_image> colornet_imagenet.t7
+```
+
 ### Notes
 
 - This is developed on a linux machine running Ubuntu 14.04 during late 2015.
