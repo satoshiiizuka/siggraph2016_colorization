@@ -4,7 +4,7 @@
 # sha1sum 36b3f03dab74262552dd63ee16b4e1df842a680f
 
 FILENAME="colornet_imagenet.t7"
-FILEURL="http://hi.cs.waseda.ac.jp/~iizuka/data/colornet_imagenet.t7"
+FILEURL="http://iizuka.cs.tsukuba.ac.jp/data/colornet_imagenet.t7"
 FILEMD5="09eddf45cd1b085fcb4cc880ba448072"
 
 echo "Downloading the colorization model (665M)..."
