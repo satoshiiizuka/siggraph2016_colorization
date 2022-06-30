@@ -60,12 +60,14 @@ Basic usage is:
 
 ```
 th colorize.lua <input_image> [<output_image>]
+th stylize.lua <input_image> <style_image> [<output_image>]
 ```
 
 For example:
 
 ```
 th colorize.lua ansel_colorado_1941.png out.png
+th stylize.lua lighthouse.jpg field.jpg out.png
 ```
 
 ### Best Performance
